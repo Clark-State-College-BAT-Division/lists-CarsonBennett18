@@ -22,14 +22,11 @@
 
 import random
 
-
 player_one = [random.randint(1, 50) for _ in range(10)]
 player_two = [random.randint(1, 50) for _ in range(10)]
 
-
 p1_wins = 0
 p2_wins = 0
-
 
 for i in range(10):
     if player_one[i] > player_two[i]:
@@ -49,10 +46,8 @@ p1_min_index = player_one.index(p1_min)
 p2_min = min(player_two)
 p2_min_index = player_two.index(p2_min)
 
-
 print("Player One =", player_one)
 print("Player Two =", player_two)
-
 
 print(f"Player one won {p1_wins} times")
 print(f"Player two won {p2_wins} times")
